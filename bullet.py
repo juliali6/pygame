@@ -8,9 +8,9 @@ class Bullet(pygame.sprite.Sprite):  # дочерний класс
 
         super(Bullet, self).__init__()   # метод super для дочернего класса
         self.screen = screen
-        self.rect = pygame.Rect(0, 0, 2, 12)  # размер пули
+        self.rect = pygame.Rect(0, 0, 30, 12)  # размер пули
         self.color = 255, 242, 0  # цвет пули
-        self.speed = 1  # скорость пути
+        self.speed = 4.5  # скорость пути
         self.rect.centerx = gun.rect.centerx  # координаты пули
         self.rect.top = gun.rect.top
         self.y = float(self.rect.y)
